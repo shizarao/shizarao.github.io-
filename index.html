@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shiza Rao</title>
+  <meta name="description" content="Shiza Rao — Computer Science and Business Administration at USC. Product, growth, and AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --text: #1d1b19;
+      --muted: #6b655d;
+      --line: #ddd6cb;
+      --accent: #2f6b4f;
+      --card: #fbf9f5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #151413;
+        --text: #eeeae4;
+        --muted: #a39c92;
+        --line: #2e2b28;
+        --accent: #7fc4a0;
+        --card: #1c1b19;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 96px 20px 64px;
+    }
+    h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(2.6rem, 8vw, 3.6rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+    .tagline {
+      margin-top: 20px;
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 34ch;
+    }
+    .tagline strong { color: var(--text); font-weight: 500; }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+    .links a {
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid var(--line);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .links a:hover { border-color: var(--accent); color: var(--accent); }
+    section { margin-top: 72px; }
+    h2 {
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .project {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .project h3 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 400;
+      font-size: 1.3rem;
+    }
+    .project p { color: var(--muted); margin-top: 4px; }
+    .tag {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.78rem;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+    }
+    footer {
+      margin-top: 72px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Shiza Rao</h1>
+    <p class="tagline">Computer Science and Business Administration at USC. I work where <strong>product, growth, and AI</strong> meet.</p>
+
+    <nav class="links" aria-label="Contact">
+      <a href="https://www.linkedin.com/in/shizarao/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:theshizarao@gmail.com">Email</a>
+    </nav>
+
+    <section aria-labelledby="work">
+      <h2 id="work">Case studies in progress</h2>
+
+      <article class="project">
+        <h3>Matcha Café Customer Research</h3>
+        <p>User interviews with café customers on ordering habits, pain points, and what brings them back.</p>
+        <span class="tag">Product discovery · User research</span>
+      </article>
+
+      <article class="project">
+        <h3>Cold Email Outreach Tool</h3>
+        <p>An automated outreach tool with reply detection that keeps a contact tracker up to date.</p>
+        <span class="tag">Product · Growth · Automation</span>
+      </article>
+
+      <article class="project">
+        <h3>Gesture-Controlled Presentation Remote</h3>
+        <p>Webcam hand tracking that replaces physical presentation clickers.</p>
+        <span class="tag">Computer vision · MediaPipe</span>
+      </article>
+    </section>
+
+    <footer>Full case studies coming soon.</footer>
+  </main>
+</body>
+</html>
